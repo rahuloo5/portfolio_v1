@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
 
   body{
     font-size: 1.4rem;
-    font-family: roboto sans-serif;
+    font-family: sans-serif;
   }
 `
 
