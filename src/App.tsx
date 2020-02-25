@@ -1,23 +1,40 @@
 import React from 'react';
+import { createGlobalStyle } from 'styled-components';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-function App() {
+import Home from './pages/home';
+
+const GlobalStyles = createGlobalStyle`
+  *, 
+  *:before, 
+  *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    font-size: 62.5%;
+  }
+
+  body{
+    font-size: 1.4rem;
+    font-family: roboto sans-serif;
+  }
+`
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <GlobalStyles />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Router>
     </div>
-  );
+
+  )
 }
 
 export default App;
