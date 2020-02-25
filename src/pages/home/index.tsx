@@ -4,7 +4,7 @@ import Layout from '../../layout';
 
 
 const HomeContainer = styled.div`
-    height: 100vh;
+    height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;

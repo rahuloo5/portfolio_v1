@@ -5,10 +5,11 @@ import Header from './header';
 import Footer from './footer';
 
 const LayoutContainer = styled.div`
-
+    height: 100vh;
 `;
 
 const Body = styled.div`
+    height: 100%;
     padding: 100px 10vw;
 `;
 
