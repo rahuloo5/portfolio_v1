@@ -10,7 +10,6 @@ const HomeContainer = styled.div`
     align-items: center;
 
     .home__title{
-        font-size: 100px;
         margin-right: 15px;
     }
 

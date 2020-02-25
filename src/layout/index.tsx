@@ -9,7 +9,7 @@ const LayoutContainer = styled.div`
 `;
 
 const Body = styled.div`
-
+    padding: 100px 10vw;
 `;
 
 interface Props {
