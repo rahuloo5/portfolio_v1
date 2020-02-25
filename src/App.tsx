@@ -25,14 +25,14 @@ const GlobalStyles = createGlobalStyle`
 
 const App = () => {
   return (
-    <div>
+    <>
       <GlobalStyles />
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>
-    </div>
+    </>
 
   )
 }

@@ -13,7 +13,7 @@ const Body = styled.div`
 `;
 
 interface Props {
-    children: HTMLElement,
+    children: any,
     isFooterPresent: boolean,
 }
 
