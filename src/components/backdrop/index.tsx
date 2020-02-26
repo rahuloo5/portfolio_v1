@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { transform } from '@babel/core';
 
 const BackdropContainer = styled.div<Prop>`
     position: fixed;

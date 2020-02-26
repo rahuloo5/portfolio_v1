@@ -26,13 +26,15 @@ const Layout: React.FunctionComponent<Props> = ({ children, isFooterPresent }) =
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
     const handleShowNavbar = () => {
-        setIsNavbarOpen(true)
+        setIsNavbarOpen(!isNavbarOpen)
     }
 
     return (
         <LayoutContainer>
             <Backdrop isNavbarOpen={isNavbarOpen} />
-            <Hamburger handleshowNavbar={handleShowNavbar} />
+            <Hamburger
+                handleShowNavbar={handleShowNavbar}
+                isNavbarOpen={isNavbarOpen} />
             <Header />
             <Body>
                 {children}

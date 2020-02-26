@@ -1,23 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HamburgerContainer = styled.div`
+interface Props {
+    handleShowNavbar?: any,
+    isNavbarOpen: boolean,
+}
+
+const HamburgerContainer = styled.div<Props>`
     position: fixed;
     right: 45px;
     top: 35px;
+    cursor: pointer;
 
     .hamburger{
             width: 25px;
             height: 3px;
             background-color: #000000;
             align-self: center;
+            ${({ isNavbarOpen }) => isNavbarOpen && 'background-color: #ffffff;'}
             
 
             &:before{
                 content: '';
                 width: 25px;
                 height: 3px;
-                background-color: #000000;
+                background-color: inherit;
                 position: absolute;
                 top: -7px;
             }
@@ -26,7 +33,7 @@ const HamburgerContainer = styled.div`
                 content: '';
                 width: 25px;
                 height: 3px;
-                background-color: #000000;
+                background-color: inherit;
                 position: absolute;
                 top: 7px;
             }
@@ -41,13 +48,14 @@ const HamburgerContainer = styled.div`
     }
 `;
 
-type Prop = {
-    handleshowNavbar: any,
-}
 
-const Hamburger: React.FC<Prop> = ({ handleshowNavbar }) => {
+
+const Hamburger: React.FC<Props> = ({ handleShowNavbar, isNavbarOpen }) => {
     return (
-        <HamburgerContainer onClick={handleshowNavbar}>
+        <HamburgerContainer
+            onClick={handleShowNavbar}
+            isNavbarOpen={isNavbarOpen}
+        >
             <div className='hamburger'></div>
             <div className='click-box'></div>
         </HamburgerContainer>
