@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Layout from '../../layout';
+import TypeMe from '../../components/typeMe';
 
 
 const HomeContainer = styled.div`
@@ -14,7 +15,7 @@ const HomeContainer = styled.div`
         align-items:baseline;
 
         &__title{
-            font-size: 96px
+            font-size: 96px;
             margin-right: 15px;
         }
     
@@ -33,7 +34,11 @@ const Home = () => {
         <Layout isFooterPresent>
             <HomeContainer>
                 <div className='home'>
-                    <h1 className='home__title'>Obodo David</h1>
+                    <h1 className='home__title'>
+                        <TypeMe duration={2000}>
+                            Obodo David
+                        </TypeMe>
+                    </h1>
                     <h6 className='home__subtitle'>Front End Developer</h6>
                 </div>
             </HomeContainer>
