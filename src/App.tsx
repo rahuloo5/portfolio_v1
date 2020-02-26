@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1{
-    font-size: 100px;
+    font-size: 96px;
     font-weight: 600;
   }
 `
