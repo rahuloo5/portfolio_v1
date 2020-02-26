@@ -2,38 +2,54 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HamburgerContainer = styled.div`
-        width: 25px;
-        height: 3px;
-        background-color: #000000;
-        position: fixed;
-        align-self: center;
-        right: 45px;
-        top: 35px;
+    position: fixed;
+    right: 45px;
+    top: 35px;
 
-        &:before{
-            content: '';
+    .hamburger{
             width: 25px;
             height: 3px;
             background-color: #000000;
-            position: absolute;
-            top: -7px;
-        }
+            align-self: center;
+            
 
-        &:after{
-            content: '';
-            width: 25px;
-            height: 3px;
-            background-color: #000000;
-            position: absolute;
-            top: 7px;
+            &:before{
+                content: '';
+                width: 25px;
+                height: 3px;
+                background-color: #000000;
+                position: absolute;
+                top: -7px;
+            }
+
+            &:after{
+                content: '';
+                width: 25px;
+                height: 3px;
+                background-color: #000000;
+                position: absolute;
+                top: 7px;
+            }
         }
     }
-`
 
-const Hamburger = () => {
+    .click-box{
+        height: 20px;
+        position: absolute;
+        width: 100%;
+        top: -10px;
+    }
+`;
+
+type Prop = {
+    handleshowNavbar: any,
+}
+
+const Hamburger: React.FC<Prop> = ({ handleshowNavbar }) => {
     return (
-        <HamburgerContainer>
-
+        <HamburgerContainer onClick={handleshowNavbar}>
+            <div className='hamburger'></div>
+            <div className='click-box'></div>
         </HamburgerContainer>
     )
 };

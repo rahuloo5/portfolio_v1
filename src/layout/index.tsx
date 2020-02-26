@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import Header from './header';
 import Footer from './footer';
 
+import Backdrop from '../components/backdrop';
+import Hamburger from '../components/hamburger';
+
 const LayoutContainer = styled.div`
     height: 100vh;
 `;
@@ -20,8 +23,14 @@ interface Props {
 }
 
 const layout: React.FC<Props> = ({ children, isFooterPresent }) => {
+    const handleShowNavbar = () => {
+        console.log('im here')
+    }
+
     return (
         <LayoutContainer>
+            <Backdrop />
+            <Hamburger handleshowNavbar={handleShowNavbar} />
             <Header />
             <Body>
                 {children}
