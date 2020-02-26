@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Hamburger from '../../components/hamburger';
+
 const HeaderContainer = styled.div`
     width: 100%;
     height: 70px;
@@ -11,7 +13,7 @@ const HeaderContainer = styled.div`
 const Header = () => {
     return (
         <HeaderContainer>
-
+            <Hamburger />
         </HeaderContainer>
     )
 };
