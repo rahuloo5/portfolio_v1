@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Layout from '../../layout';
+import TypeMe from '../../components/typeMe';
 
 
 const AboutContainer = styled.div`
@@ -59,15 +60,41 @@ const AboutBody = styled.div`
 `
 
 const About = () => {
+    const [displayOne, setDisplayOne] = useState();
+    const [displayTwo, setDisplayTwo] = useState();
+    const [displayThree, setDisplayThree] = useState();
+
+    useEffect(() => {
+
+        setTimeout(() => {
+            setDisplayOne(true)
+        }, 2500)
+
+        setTimeout(() => {
+            setDisplayTwo(true)
+        }, 5000)
+
+        setTimeout(() => {
+            setDisplayThree(true)
+        }, 7000)
+    })
+
     return (
         <Layout isFooterPresent>
             <AboutContainer>
                 <AboutHeader>about.</AboutHeader>
                 <AboutBody>
-                    <p className='about__details'>Meticulous front end web developer with passion for responsive website design. <br />
-                        freeCodeCamp certified. Proficient in vanilla javascript, hence can easily adapt to any of its frameworks <br />
-                        depending on the requirement of the job. Detail - oriented, with a strong knack for writing clean <br />
-                        and maintainable code.</p>
+                    <p className='about__details'>
+                        <TypeMe duration={2000}>
+                            Meticulous front end web developer with passion for responsive website design.
+                            </TypeMe>
+                        <br />
+                        {displayOne && <TypeMe duration={2000}>freeCodeCamp certified. Proficient in vanilla javascript, hence can easily adapt to any of its frameworks</TypeMe>}
+                        <br />
+                        {displayTwo && <TypeMe duration={2000}>depending on the requirement of the job. Detail - oriented, with a strong knack for writing clean</TypeMe>}
+                        <br />
+                        {displayThree && <TypeMe duration={2000}>and maintainable code.</TypeMe>}
+                    </p>
                     <section className='about__tech-section'>
                         <h3 className='about__tech-section__header'>tech skills.</h3>
                         <p className='about__tech-section__category'><span>proficient:</span>HTML, CSS, SASS, Styled-components, Vanilla javascript, React.JS, Redux, Git </p>

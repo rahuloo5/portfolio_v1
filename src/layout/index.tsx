@@ -7,7 +7,6 @@ import Footer from './footer';
 import Backdrop from '../components/backdrop';
 import Hamburger from '../components/hamburger';
 import PagesLink from '../components/pagesLinks';
-import { JSXElement } from '@babel/types';
 
 const LayoutContainer = styled.div`
     height: 100vh;
