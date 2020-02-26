@@ -23,11 +23,10 @@ const GlobalStyles = createGlobalStyle`
   body{
     font-size: 1.4rem;
     font-family: sans-serif;
-    background-color: #000000;
   }
 
   h1{
-    font-size: 96px;
+    font-size: 70px;
     font-weight: 600;
   }
 `

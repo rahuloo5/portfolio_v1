@@ -9,24 +9,33 @@ const HomeContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    .home__title{
-        margin-right: 15px;
-    }
+    .home{
+        display: flex;
+        align-items:baseline;
 
-    .home__subtitle{
-        font-size: 18px;
-        font-style: italic;
-        color: #074BF8;
-        margin-top: 55px;
+        &__title{
+            font-size: 96px
+            margin-right: 15px;
+        }
+    
+        &__subtitle{
+            font-size: 18px;
+            font-style: italic;
+            color: #074BF8;
+            margin-top: 55px;
+        }
     }
+    
 `
 
 const Home = () => {
     return (
         <Layout isFooterPresent>
             <HomeContainer>
-                <h1 className='home__title'>Obodo David</h1>
-                <h6 className='home__subtitle'>Front End Developer</h6>
+                <div className='home'>
+                    <h1 className='home__title'>Obodo David</h1>
+                    <h6 className='home__subtitle'>Front End Developer</h6>
+                </div>
             </HomeContainer>
         </Layout>
     )
