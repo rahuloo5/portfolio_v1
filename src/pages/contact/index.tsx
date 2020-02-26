@@ -29,8 +29,9 @@ const ContactContainer = styled.div`
 
             li{
 
-                svg{
-
+                i{
+                    font-size: 40px;
+                    margin-right: 40px;
                 }
 
                 a{
@@ -45,19 +46,19 @@ const ContactContainer = styled.div`
 
 const ALL_CONTACTS = [
     {
-        icon: faEnvelope,
+        icon: 'fas fa-envelope',
         link: 'obododavid5@gmail.com',
     },
     {
-        icon: faEnvelope,
+        icon: 'fab fa-github-square',
         link: 'https://github.com/obododavid',
     },
     {
-        icon: faEnvelope,
+        icon: 'fab fa-twitter-square',
         link: 'https://twitter.com/ObodoDavid2',
     },
     {
-        icon: faEnvelope,
+        icon: 'fab fa-linkedin',
         link: 'https://www.linkedin.com/in/obodo-david-998786174/',
     },
 ]
@@ -72,7 +73,7 @@ const Contact = () => {
                     {ALL_CONTACTS.map((contact, i) => {
                         const { icon, link } = contact
                         return <li>
-                            <FontAwesomeIcon icon={icon} />
+                            <i className={icon}></i>
                             <a href={link} target='_blank'>{link}</a>
                         </li>
                     })}
