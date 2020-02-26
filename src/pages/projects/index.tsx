@@ -7,11 +7,16 @@ const ProjectContainer = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+`
 
-        .projects__header{
-            margin-bottom: 60px;
-        }
+const ProjectHeader = styled.h1`
+    margin-bottom: 30px;
+`
+
+const ProjectBody = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 
         .projects__body{
             display:grid;
@@ -36,6 +41,7 @@ const ProjectContainer = styled.div`
         }
 
         .projects__buttonContainer{
+            margin-bottom: 30px;
 
             button{
                 font-size: 24px;
@@ -53,21 +59,23 @@ const Projects = () => {
     return (
         <Layout isFooterPresent>
             <ProjectContainer>
-                <h1 className='projects__header'>projects.</h1>
-                <ul className='projects__body'>
-                    {ALL_PROJECTS.map((project, i) => {
-                        const { title, details, live_link, source_code } = project
-                        return <li key={i}>
-                            <h4>{title}</h4>
-                            <p>{details}</p>
-                            <a href="">{live_link}</a>
-                            <a href="">{source_code}</a>
-                        </li>
-                    })}
-                </ul>
-                <section className='projects__buttonContainer'>
-                    <button>Go to contacts</button>&#10230;
+                <ProjectHeader>projects.</ProjectHeader>
+                <ProjectBody>
+                    <ul className='projects__body'>
+                        {ALL_PROJECTS.map((project, i) => {
+                            const { title, details, live_link, source_code } = project
+                            return <li key={i}>
+                                <h4>{title}</h4>
+                                <p>{details}</p>
+                                <a href="">{live_link}</a>
+                                <a href="">{source_code}</a>
+                            </li>
+                        })}
+                    </ul>
+                    <section className='projects__buttonContainer'>
+                        <button>Go to contacts</button>&#10230;
                 </section>
+                </ProjectBody>
             </ProjectContainer>
         </Layout>
     )
