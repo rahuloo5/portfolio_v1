@@ -1,16 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const BackdropContainer = styled.div`
-
+const FooterContainer = styled.div`
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
 `
 
-const Backdrop = () => {
+const Footer = () => {
     return (
-        <BackdropContainer>
+        <FooterContainer>
 
-        </BackdropContainer>
+        </FooterContainer>
     )
 };
 
-export default Backdrop
+export default Footer

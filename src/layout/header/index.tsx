@@ -1,16 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const BackdropContainer = styled.div`
-
+const HeaderContainer = styled.div`
+    width: 100%;
+    height: 70px;
+    background-color: #FAF9F9;
+    position: fixed;
+    top: 0;
 `
 
-const Backdrop = () => {
+const Header = () => {
     return (
-        <BackdropContainer>
+        <HeaderContainer>
 
-        </BackdropContainer>
+        </HeaderContainer>
     )
 };
 
-export default Backdrop
+export default Header
