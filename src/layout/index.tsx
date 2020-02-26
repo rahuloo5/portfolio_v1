@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import Header from './header';
@@ -22,14 +22,16 @@ interface Props {
     isFooterPresent: boolean,
 }
 
-const layout: React.FC<Props> = ({ children, isFooterPresent }) => {
+const Layout: React.FunctionComponent<Props> = ({ children, isFooterPresent }) => {
+    const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
     const handleShowNavbar = () => {
-        console.log('im here')
+        setIsNavbarOpen(true)
     }
 
     return (
         <LayoutContainer>
-            <Backdrop />
+            <Backdrop isNavbarOpen={isNavbarOpen} />
             <Hamburger handleshowNavbar={handleShowNavbar} />
             <Header />
             <Body>
@@ -40,4 +42,4 @@ const layout: React.FC<Props> = ({ children, isFooterPresent }) => {
     )
 };
 
-export default layout
+export default Layout
