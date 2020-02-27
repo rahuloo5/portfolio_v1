@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Props } from './index';
+import { Props } from './IAbout';
 
 
 export const AboutContainer = styled.div`
