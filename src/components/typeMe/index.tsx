@@ -37,9 +37,9 @@ const TypeMe: React.FC<Props> = ({ children, duration = 300 }) => {
 
 
     return (
-        <>
+        <div>
             {typedText}
-        </>
+        </div>
     )
 }
 
