@@ -18,7 +18,7 @@ const HamburgerContainer = styled.div<Props>`
             height: 3px;
             background-color: #000000;
             align-self: center;
-            ${({ isNavbarOpen }) => isNavbarOpen && 'background-color: #ffffff;'}
+            ${({ isNavbarOpen }) => isNavbarOpen && 'background-color: #ffffff; height: 0'};
             
 
             &:before{
@@ -28,6 +28,8 @@ const HamburgerContainer = styled.div<Props>`
                 background-color: inherit;
                 position: absolute;
                 top: -7px;
+                transition: all 0.5s ease-in-out;
+                ${({ isNavbarOpen }) => isNavbarOpen && 'top: 0; transform: rotate(45deg)'};
             }
 
             &:after{
@@ -37,6 +39,8 @@ const HamburgerContainer = styled.div<Props>`
                 background-color: inherit;
                 position: absolute;
                 top: 7px;
+                transition: all 0.5s ease-in-out;
+                ${({ isNavbarOpen }) => isNavbarOpen && 'top: 0; transform: rotate(-45deg)'};
             }
         }
     }
