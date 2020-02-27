@@ -45,7 +45,8 @@ const ProjectBody = styled.div<Props>`
                 grid-template-columns: 1fr;
                 grid-row-gap: 35px;
                 list-style: none;
-            }
+                grid-auto-flow: row;
+            };
 
             h4{
                 font-size: 18px;
