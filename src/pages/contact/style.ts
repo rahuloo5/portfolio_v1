@@ -8,12 +8,21 @@ flex-direction: column;
 
     .contact__header{
         margin-bottom: 60px;
+
+        @media(max-width: 765px){
+            font-size: 40px;
+        }
     }
 
     .contact__subheader{
         font-size: 36px;
         margin-bottom: 30px;
         font-weight: 300;
+
+        @media(max-width: 765px){
+            font-size: 16px;
+            line-height: 30px;
+        }
     }
 
     .contact__links-wrapper{
@@ -23,11 +32,23 @@ flex-direction: column;
         flex-direction: column;
         justify-content: space-evenly;
 
+        @media(max-width: 765px){
+            display: block;
+        }
+
         li{
+            @media(max-width: 765px){
+                margin-bottom: 30px;
+            }
 
             i{
                 font-size: 40px;
                 margin-right: 40px;
+
+                @media(max-width: 765px){
+                    font-size: 16px;
+                    margin-right: 20px;
+                }
             }
 
             a{
@@ -37,6 +58,10 @@ flex-direction: column;
                 color: #000000;
                 position: relative;
                 cursor: pointer;
+
+                @media(max-width: 765px){
+                    font-size: 16px;
+                }
 
                 &:after{
                     content: '';
