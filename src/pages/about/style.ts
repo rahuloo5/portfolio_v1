@@ -61,14 +61,42 @@ export const AboutBody = styled.div<Props>`
         transition: 0.5s ease-in-out;
         ${({ displayEight }) => displayEight && 'opacity: 1; transform: translateY(0px)'};
 
-        button{
-            font-size: 24px;
+        a{
+            font-size: 12px;
             border: none;
             color: #074BF8;
             background-color: transparent;
             cursor: pointer;
             font-weight: 600;
             font-style: italic;
+            position: relative;
+            text-decoration: none;
+
+            &:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #074BF8;
+                bottom: 0;
+                left: 0;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: all 0.25s ease-in-out;
+            }
+
+            &:hover{
+
+                &:after{
+                    transform-origin: right;
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        span{
+            display: inline-block;
+            transform: translate(10px, 0px);
         }
     }
 `

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../../layout';
 import TypeMe from '../../components/typeMe';
+import { Link } from 'react-router-dom';
 
 import { AboutContainer, AboutHeader, AboutBody } from './style';
 import { Props } from './IAbout';
@@ -81,8 +82,9 @@ const About: React.FC<Props> = () => {
                         </p>
                     </section>
                     <section className='about__buttonContainer'>
-                        <button>Go to projects</button>&#10230;
-                </section>
+                        <Link to='/projects'>Go to projects</Link>
+                        <span>&#10230;</span>
+                    </section>
                 </AboutBody>
             </AboutContainer>
         </Layout>
