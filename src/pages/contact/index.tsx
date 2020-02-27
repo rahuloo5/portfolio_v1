@@ -4,29 +4,29 @@ import { ContactContainer } from './style';
 
 const ALL_CONTACTS = [
     {
+
+        icon: 'fas fa-envelope',
+        link: 'mailto:obododavid5@gmail.com',
+        label: 'obododavid5@gmail.com'
+    },
+    {
         icon: 'fab fa-github-square',
         link: 'https://github.com/obododavid',
+        label: 'https://github.com/obododavid'
     },
     {
         icon: 'fab fa-twitter-square',
         link: 'https://twitter.com/ObodoDavid2',
+        label: 'https://twitter.com/ObodoDavid2'
     },
     {
         icon: 'fab fa-linkedin',
         link: 'https://www.linkedin.com/in/obodo-david-998786174/',
+        label: 'https://www.linkedin.com/in/obodo-david-998786174/'
     },
 ]
 
 const Contact = () => {
-
-    const handleCopyToClipboard = (e: any): void => {
-        const element = document.createElement('textarea');
-        element.value = e.target.innerHTML;
-        document.body.appendChild(element);
-        element.select();
-        document.execCommand('copy');
-        document.body.removeChild(element);
-    }
 
     return (
         <Layout isFooterPresent={false} >
@@ -34,15 +34,11 @@ const Contact = () => {
                 <h1 className='contact__header'>contact.</h1>
                 <p className='contact__subheader'>You can contact me through my mail or any of the platforms below:</p>
                 <ul className='contact__links-wrapper'>
-                    <li>
-                        <i className='fas fa-envelope'></i>
-                        <a onClick={handleCopyToClipboard}>obododavid5@gmail.com</a>
-                    </li>
                     {ALL_CONTACTS.map((contact, i) => {
-                        const { icon, link } = contact
-                        return <li>
+                        const { icon, link, label } = contact
+                        return <li key={i}>
                             <i className={icon}></i>
-                            <a href={link} target='_blank'>{link}</a>
+                            <a href={link} target='_blank'>{label}</a>
                         </li>
                     })}
                 </ul>
