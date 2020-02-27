@@ -21,6 +21,10 @@ const PagesLinkContainer = styled.div<Prop>`
         color: #ffffff;
         font-size: 36px;
         margin-bottom: 50px;
+
+        @media(max-width: 765px){
+            font-size: 25px;
+        }
     }
 
     ${({ isNavbarOpen }) => isNavbarOpen && 'transform: translateY(0)'}
