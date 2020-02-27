@@ -14,6 +14,10 @@ const ProjectContainer = styled.div`
 
 const ProjectHeader = styled.h1`
     margin-bottom: 30px;
+
+    @media(max-width: 765px){
+        font-size: 40px;
+    }
 `
 
 const ProjectBody = styled.div<Props>`
@@ -36,6 +40,12 @@ const ProjectBody = styled.div<Props>`
             opacity: 0;
             transition: opacity 1s ease-in-out;
             ${({ displayOne }) => displayOne && 'opacity: 1'};
+
+            @media(max-width: 765px){
+                grid-template-columns: 1fr;
+                grid-row-gap: 35px;
+                list-style: none;
+            }
 
             h4{
                 font-size: 18px;
