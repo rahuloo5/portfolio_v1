@@ -24,15 +24,28 @@ const About: React.FC<Props> = () => {
 
         setTimeout(() => {
             setDisplayTwo(true)
-        }, 2500)
+        }, 500)
 
         setTimeout(() => {
             setDisplayThree(true)
-        }, 5000)
+        }, 1000)
 
         setTimeout(() => {
             setDisplayFour(true)
-        }, 7000)
+        }, 1500)
+
+        setTimeout(() => {
+            setDisplayFive(true)
+        }, 2000)
+        setTimeout(() => {
+            setDisplaySix(true)
+        }, 2500)
+        setTimeout(() => {
+            setDisplaySeven(true)
+        }, 3000)
+        setTimeout(() => {
+            setDisplayEight(true)
+        }, 3500)
     })
 
     return (
@@ -41,15 +54,17 @@ const About: React.FC<Props> = () => {
                 <AboutHeader>about.</AboutHeader>
                 <AboutBody
                     displayFive={displayFive}
+                    displaySix={displaySix}
+                    displayEight={displayEight}
                 >
                     <div className='about__details'>
-                        {displayOne && <TypeMe duration={2000}>Meticulous front end web developer with passion for responsive website design.</TypeMe>}
+                        {displayOne && <TypeMe duration={500}>Meticulous front end web developer with passion for responsive website design.</TypeMe>}
                         <br />
-                        {displayTwo && <TypeMe duration={2000}>freeCodeCamp certified. Proficient in vanilla javascript, hence can easily adapt to any of its frameworks</TypeMe>}
+                        {displayTwo && <TypeMe duration={500}>freeCodeCamp certified. Proficient in vanilla javascript, hence can easily adapt to any of its frameworks</TypeMe>}
                         <br />
-                        {displayThree && <TypeMe duration={2000}>depending on the requirement of the job. Detail - oriented, with a strong knack for writing clean</TypeMe>}
+                        {displayThree && <TypeMe duration={500}>depending on the requirement of the job. Detail - oriented, with a strong knack for writing clean</TypeMe>}
                         <br />
-                        {displayFour && <TypeMe duration={2000}>and maintainable code.</TypeMe>}
+                        {displayFour && <TypeMe duration={500}>and maintainable code.</TypeMe>}
 
                     </div>
                     <section className='about__tech-section'>
@@ -58,11 +73,11 @@ const About: React.FC<Props> = () => {
                         </h3>
                         <p className='about__tech-section__category'>
                             <span>proficient:</span>
-                            HTML, CSS, SASS, Styled-components, Vanilla javascript, React.JS, Redux, Git
+                            {displaySeven && <TypeMe duration={500}>HTML, CSS, SASS, Styled-components, Vanilla javascript, React.JS, Redux, Git</TypeMe>}
                         </p>
                         <p className='about__tech-section__category'>
                             <span>familiar:</span>
-                            Typescript, webpack, Jest, JQuery, Blazor
+                            {displaySeven && <TypeMe duration={500}>Typescript, webpack, Jest, JQuery, Blazor</TypeMe>}
                         </p>
                     </section>
                     <section className='about__buttonContainer'>

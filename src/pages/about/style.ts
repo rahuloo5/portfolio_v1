@@ -29,6 +29,11 @@ export const AboutBody = styled.div<Props>`
             font-size: 36px;
             font-weight: 600;
             margin-bottom: 30px;
+            opacity: 0;
+            transform: translate(-10px, 20px);
+            transition: 0.5s ease-in-out;
+            transition-property: opacity, transform;
+            ${({ displayFive }) => displayFive && 'opacity: 1; transform: translate(0,0)'}
         }
 
         &__category{
@@ -37,13 +42,24 @@ export const AboutBody = styled.div<Props>`
             margin-bottom: 15px;
 
             span{
+                display: inline-block;
                 font-weight: 400;
                 margin-right: 15px;
+                transition: 0.5s ease-in-out;
+                transform: translateX(-20px);
+                opacity: 0;
+                transition-property: opacity, transform;
+                ${({ displaySix }) => displaySix && 'opacity: 1; transform: translateX(0px)'}
             }
         }
     }
 
     .about__buttonContainer{
+        opacity: 0;
+        transform: translateY(20px);
+        transition-property: opacity, transform;
+        transition: 0.5s ease-in-out;
+        ${({ displayEight }) => displayEight && 'opacity: 1; transform: translateY(0px)'};
 
         button{
             font-size: 24px;
