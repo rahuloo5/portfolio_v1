@@ -24,26 +24,42 @@ const ProjectBody = styled.div<Props>`
 
         .projects__body{
             display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+            // grid-template-columns: 1fr 1fr 1fr;
+            // grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+
+            grid-auto-flow: column;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, auto);
+
+            grid-column-gap: 50px;
             flex: 1;
             opacity: 0;
             transition: opacity 1s ease-in-out;
             ${({ displayOne }) => displayOne && 'opacity: 1'};
 
             h4{
-                font-size: 14px;
+                font-size: 18px;
                 font-weight: 600;
+                margin-bottom: 10px;
             }
 
             p{
                 font-size: 14px;
                 font-weight: 300;
+                margin-bottom: 5px;
             }
 
             a{
                 font-size: 14px;
                 color: #074BF8;
+                text-decoration: none;
+                opacity: 0.4;
+                transition: all 0.5s ease-in-out;
+
+                &:hover{
+                    text-decoration: underline;
+                    opacity: 1;
+                }
             }
         }
 
@@ -116,12 +132,11 @@ const Projects: React.FC<Props> = () => {
                     displayTwo={displayTwo}>
                     <ul className='projects__body'>
                         {ALL_PROJECTS.map((project, i) => {
-                            const { title, details, live_link, source_code } = project
+                            const { title, details, live_link } = project
                             return <li key={i}>
                                 <h4>{title}</h4>
                                 <p>{details}</p>
-                                <a href="">{live_link}</a>
-                                <a href="">{source_code}</a>
+                                <a href={live_link}>live site</a>
                             </li>
                         })}
                     </ul>

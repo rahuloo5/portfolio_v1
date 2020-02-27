@@ -19,7 +19,13 @@ const TypeMe: React.FC<Props> = ({ children, duration = 300 }) => {
     }
 
     const typeText = (step: number, textLength: number) => {
-        const currentTextToType = textToType.slice(0, index + 5);
+        let newIndex;
+        if (textLength <= 11) {
+            newIndex = index;
+        } else {
+            newIndex = index + 5;
+        }
+        const currentTextToType = textToType.slice(0, newIndex);
         setTypedText(currentTextToType)
 
         setTimeout(() => {
