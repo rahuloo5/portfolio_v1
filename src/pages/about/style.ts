@@ -10,6 +10,10 @@ export const AboutContainer = styled.div`
 
 export const AboutHeader = styled.h1`
 
+    @media(max-width: 765px){
+        font-size: 40px;
+    }
+
 `
 export const AboutBody = styled.div<Props>`
     flex: 1;
@@ -21,6 +25,11 @@ export const AboutBody = styled.div<Props>`
         font-size: 24px;
         font-weight: 300;
         line-height: 40px;
+
+        @media(max-width: 765px){
+            font-size: 16px;
+            line-height: 30px;
+        }
     }
 
     .about__tech-section{
@@ -33,13 +42,21 @@ export const AboutBody = styled.div<Props>`
             transform: translate(-10px, 20px);
             transition: 0.5s ease-in-out;
             transition-property: opacity, transform;
-            ${({ displayFive }) => displayFive && 'opacity: 1; transform: translate(0,0)'}
+            ${({ displayFive }) => displayFive && 'opacity: 1; transform: translate(0,0)'};
+
+            @media(max-width: 765px){
+                font-size: 25px;
+            }
         }
 
         &__category{
             font-size: 24px;
             font-weight: 300;
             margin-bottom: 15px;
+
+            @media(max-width: 765px){
+                font-size: 16px;
+            }
 
             span{
                 display: inline-block;

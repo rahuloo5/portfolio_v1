@@ -16,6 +16,10 @@ const Body = styled.div`
     height: calc(100vh - 140px);
     padding: 0 10vw;
     background-color: #ffffff;
+
+    @media(max-width: 765px){
+        padding: 0 20px;
+    }
 `;
 
 interface Props {
