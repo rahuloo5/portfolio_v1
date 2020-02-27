@@ -21,7 +21,7 @@ const TypeMe: React.FC<Props> = ({ children, duration = 300 }) => {
     const typeText = (step: number, textLength: number) => {
         let newIndex;
         if (textLength <= 11) {
-            newIndex = index;
+            newIndex = index + 1;
         } else {
             newIndex = index + 5;
         }

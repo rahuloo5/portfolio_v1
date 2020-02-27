@@ -18,20 +18,37 @@ const HomeContainer = styled.div<Props>`
         display: flex;
         align-items:baseline;
 
+        @media(max-width: 765px){
+            flex-direction: column;
+        }
+
         &__title{
             font-size: 96px;
             margin-right: 15px;
+
+            @media(max-width: 992px){
+                font-size: 70px;
+            }
+
+            @media(max-width: 765px){
+                font-size: 45px;
+                margin-right: 0;
+            }
         }
     
         &__subtitle{
             font-size: 18px;
             font-style: italic;
             color: #074BF8;
-            margin-top: 55px;
             opacity: 0;
             transition: opacity 1s ease-in-out;
 
-            ${({ showOccupation }) => showOccupation && 'opacity: 1'}
+            ${({ showOccupation }) => showOccupation && 'opacity: 1'};
+
+            @media(max-width: 765px){
+                align-self: center;
+                font-size: 15px;
+            }
         }
     }
     
