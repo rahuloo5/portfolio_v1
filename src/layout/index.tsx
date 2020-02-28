@@ -18,7 +18,7 @@ const Body = styled.div`
     background-color: #ffffff;
 
     @media(max-width: 765px){
-        padding: 0 20px;
+        padding: 0 20px 70px;
     }
 `;
 
