@@ -6,6 +6,10 @@ export const AboutContainer = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
+
+    @media(max-width: 765px){
+        height: calc(100vh - 150px);
+    }
 `
 
 export const AboutHeader = styled.h1`

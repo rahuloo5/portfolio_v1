@@ -14,6 +14,10 @@ const HomeContainer = styled.div<Props>`
     justify-content: center;
     align-items: center;
 
+    @media(max-width: 765px){
+        height: calc(100vh - 150px);
+    }
+
     .home{
         display: flex;
         align-items:baseline;
