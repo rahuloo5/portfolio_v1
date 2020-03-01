@@ -6,7 +6,7 @@ const BackdropContainer = styled.div<Prop>`
     background-color: rgba(0,0,0,0.95);
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
     transform: translateY(-100vh);
     transition: transform 0.25s ease-in-out;
 

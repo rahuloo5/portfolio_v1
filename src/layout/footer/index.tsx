@@ -11,6 +11,10 @@ const FooterContainer = styled.div`
     justify-content: center;
     align-items: center;
 
+    @media(max-width: 765px){
+        position: static;
+    }
+
     i{
         color: #ffffff;
         font-size: 40px;

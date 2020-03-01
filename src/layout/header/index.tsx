@@ -8,6 +8,11 @@ const HeaderContainer = styled.div`
     height: 70px;
     background-color: #FAF9F9;
     top: 0;
+
+    @media(max-width: 765px){
+        position: fixed;
+        z-index: 1;
+    }
 `
 
 const Header = () => {

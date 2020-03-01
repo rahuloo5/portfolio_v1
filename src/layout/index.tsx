@@ -18,8 +18,9 @@ const Body = styled.div`
     background-color: #ffffff;
 
     @media(max-width: 765px){
-        padding: 0 20px;
-        margin-bottom: 70px;
+        padding: 80px 20px 0px;
+        height: auto;
+        min-height: calc(100vh - 140px);
     }
 `;
 
