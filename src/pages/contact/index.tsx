@@ -16,8 +16,8 @@ const ALL_CONTACTS = [
     },
     {
         icon: 'fab fa-twitter-square',
-        link: 'https://twitter.com/ObodoDavid2',
-        label: 'https://twitter.com/ObodoDavid2'
+        link: 'https://twitter.com/phitGeek',
+        label: 'https://twitter.com/phitGeek'
     },
     {
         icon: 'fab fa-linkedin',
