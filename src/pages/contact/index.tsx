@@ -38,7 +38,7 @@ const Contact = () => {
                         const { icon, link, label } = contact
                         return <li key={i}>
                             <i className={icon}></i>
-                            <a href={link} target='_blank'>{label}</a>
+                            <a href={link} target='_blank' rel="noopener noreferrer">{label}</a>
                         </li>
                     })}
                 </ul>

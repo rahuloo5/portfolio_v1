@@ -147,7 +147,7 @@ const Projects: React.FC<Props> = () => {
                             return <li key={i}>
                                 <h4>{title}</h4>
                                 <p>{details}</p>
-                                <a href={live_link} target="_blank">live site</a>
+                                <a href={live_link} target="_blank" rel="noopener noreferrer">live site</a>
                             </li>
                         })}
                     </ul>

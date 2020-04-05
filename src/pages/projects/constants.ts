@@ -25,11 +25,16 @@ export const ALL_PROJECTS = [
     },
     {
         id: 5,
+        title: 'd-commerce(WIP)',
+        details: 'An e-commerce platform',
+        live_link: 'https://d-commerce.netlify.com/',
+    },
+    {
+        id: 16,
         title: 'developer of the year',
         details: 'Clone of “Awwwards” (https://www.awwwards.com/) awards site for the year 2020',
         live_link: 'https://obododavid.github.io/developer-of-the-year/',
     },
-
     {
         id: 6,
         title: 'Shortly',
@@ -78,12 +83,6 @@ export const ALL_PROJECTS = [
         title: 'Freebies',
         details: 'clone of freebies(https://freebies.bypeople.com/) website home page',
         live_link: 'https://obododavid.github.io/freebies/',
-    },
-    {
-        id: 12,
-        title: 'Huddle',
-        details: 'Huddle landing page',
-        live_link: 'https://obododavid.github.io/FEM-huddle-landing-page/',
     },
     {
         id: 8,
