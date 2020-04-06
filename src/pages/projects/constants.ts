@@ -27,7 +27,7 @@ export const ALL_PROJECTS = [
         id: 5,
         title: 'd-commerce(WIP)',
         details: 'An e-commerce platform',
-        live_link: 'https://d-commerce.netlify.com/',
+        live_link: 'https://d-commerce-99633.firebaseapp.com/',
     },
     {
         id: 16,
