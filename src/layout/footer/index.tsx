@@ -27,7 +27,7 @@ const Footer = () => {
     return (
         <FooterContainer>
             <a href="https://github.com/obododavid" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
-            <a href="https://twitter.com/ObodoDavid2" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
+            <a href="https://twitter.com/phitGeek" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
             <a href="https://www.linkedin.com/in/obodo-david-998786174/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
         </FooterContainer>
     )
