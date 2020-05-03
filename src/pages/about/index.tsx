@@ -59,7 +59,7 @@ const About: React.FC<Props> = () => {
                     displayEight={displayEight}
                 >
                     <div className='about__details'>
-                        {displayOne && <TypeMe duration={500}>Meticulous front end web developer with passion for responsive website design.</TypeMe>}
+                        {displayOne && <TypeMe duration={500}>Meticulous front end developer with passion for responsive website design.</TypeMe>}
                         <br />
                         {displayTwo && <TypeMe duration={500}>freeCodeCamp certified. Proficient in vanilla javascript, hence can easily adapt to any of its frameworks</TypeMe>}
                         <br />
