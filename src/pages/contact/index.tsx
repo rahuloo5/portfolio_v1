@@ -6,8 +6,8 @@ const ALL_CONTACTS = [
     {
 
         icon: 'fas fa-envelope',
-        link: 'mailto:obododavid5@gmail.com',
-        label: 'obododavid5@gmail.com'
+        link: 'mailto:contact@obododavid.com',
+        label: 'contact@obododavid.com'
     },
     {
         icon: 'fab fa-github-square',
