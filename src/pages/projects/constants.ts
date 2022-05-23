@@ -1,5 +1,11 @@
 export const ALL_PROJECTS = [
     {
+        id: "prodeus",
+        title: "Prodeus",
+        details: "Web Application for prodeus extension",
+        live_link: "https://www.prodeus.co/"
+    },
+    {
         id: "cadmils",
         title: "Cadmils Consulting",
         details: "Official website of cadmils consulting agency",
