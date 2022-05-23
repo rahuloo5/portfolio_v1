@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 interface Props {
-    handleShowNavbar?: any,
-    isNavbarOpen: boolean,
+    handleShowNavbar?: any;
+    isNavbarOpen: boolean;
 }
 
 const HamburgerContainer = styled.div<Props>`
@@ -16,9 +16,9 @@ const HamburgerContainer = styled.div<Props>`
     .hamburger{
             width: 25px;
             height: 3px;
-            background-color: #000000;
+            background-color: #fff;
             align-self: center;
-            ${({ isNavbarOpen }) => isNavbarOpen && 'background-color: #ffffff; height: 0'};
+            ${({ isNavbarOpen }) => isNavbarOpen && "background-color: #ffffff; height: 0"};
             
 
             &:before{
@@ -29,7 +29,7 @@ const HamburgerContainer = styled.div<Props>`
                 position: absolute;
                 top: -7px;
                 transition: all 0.5s ease-in-out;
-                ${({ isNavbarOpen }) => isNavbarOpen && 'top: 0; transform: rotate(45deg)'};
+                ${({ isNavbarOpen }) => isNavbarOpen && "top: 0; transform: rotate(45deg)"};
             }
 
             &:after{
@@ -40,7 +40,7 @@ const HamburgerContainer = styled.div<Props>`
                 position: absolute;
                 top: 7px;
                 transition: all 0.5s ease-in-out;
-                ${({ isNavbarOpen }) => isNavbarOpen && 'top: 0; transform: rotate(-45deg)'};
+                ${({ isNavbarOpen }) => isNavbarOpen && "top: 0; transform: rotate(-45deg)"};
             }
         }
     }
@@ -53,18 +53,13 @@ const HamburgerContainer = styled.div<Props>`
     }
 `;
 
-
-
 const Hamburger: React.FC<Props> = ({ handleShowNavbar, isNavbarOpen }) => {
     return (
-        <HamburgerContainer
-            onClick={handleShowNavbar}
-            isNavbarOpen={isNavbarOpen}
-        >
-            <div className='hamburger'></div>
-            <div className='click-box'></div>
+        <HamburgerContainer onClick={handleShowNavbar} isNavbarOpen={isNavbarOpen}>
+            <div className="hamburger"></div>
+            <div className="click-box"></div>
         </HamburgerContainer>
-    )
+    );
 };
 
-export default Hamburger
+export default Hamburger;
