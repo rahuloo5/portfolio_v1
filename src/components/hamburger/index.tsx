@@ -8,7 +8,7 @@ interface Props {
 
 const HamburgerContainer = styled.div<Props>`
     position: fixed;
-    z-index: 3;
+    z-index: 13;
     right: 45px;
     top: 35px;
     cursor: pointer;
