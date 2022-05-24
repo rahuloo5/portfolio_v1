@@ -38,7 +38,7 @@ export const ALL_PROJECTS = [
         id: "hospital-finder",
         title: "Hospital finder",
         details: "Find Hospitals, Clinics, Pharmacies and Health care centers close to you",
-        live_link: "https://enye-cohort4-obodo.web.app/",
+        live_link: "https://medic-finder.netlify.app/",
         image: imgHospitalFinder,
         tags: [tags[3]]
     },
