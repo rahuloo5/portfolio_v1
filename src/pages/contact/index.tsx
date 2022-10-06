@@ -5,8 +5,8 @@ import { ContactContainer } from "./style";
 const ALL_CONTACTS = [
     {
         icon: "fab fa-linkedin",
-        link: "https://www.linkedin.com/in/obodo-david-998786174/",
-        label: "https://www.linkedin.com/in/obodo-david-998786174/"
+        link: "https://www.linkedin.com/in/david-obodo-998786174/",
+        label: "https://www.linkedin.com/in/david-obodo-998786174/"
     },
     {
         icon: "fab fa-github-square",
