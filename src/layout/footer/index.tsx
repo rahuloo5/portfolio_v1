@@ -26,9 +26,10 @@ const FooterContainer = styled.div`
 const Footer = () => {
     return (
         <FooterContainer>
-            <a href="https://github.com/obododavid" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
-            <a href="https://twitter.com/phitGeek" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
-            <a href="https://www.linkedin.com/in/david-obodo-998786174" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+            <a href="https://github.com/rahuloo5" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
+            <a href="https://twitter.com/rahuloo55" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/in/rahul-tomar-941586116/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/___rahul5____/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
         </FooterContainer>
     )
 };

@@ -8,8 +8,8 @@ import { Props } from "./IProject";
 import { ProjectContainer, ProjectHeader, ProjectBody, ProjectBodyTwo } from "./styles";
 
 const Projects: React.FC<Props> = () => {
-    const [displayOne, setDisplayOne] = useState();
-    const [displayTwo, setDisplayTwo] = useState();
+    const [displayOne, setDisplayOne] = useState(false);
+    const [displayTwo, setDisplayTwo] = useState(false);
 
     const handleTriggerGoogleAnalyticsEvent = (title: any) => {
         ReactGA.event({
@@ -27,12 +27,6 @@ const Projects: React.FC<Props> = () => {
         }, 1000);
     });
 
-    const TAGS = [
-        "Enterprise grade application",
-        "Static functional Website",
-        "Dyamic functional Web Application",
-        "Playful/Experimental"
-    ];
     return (
         <Layout isFooterPresent>
             <ProjectContainer>

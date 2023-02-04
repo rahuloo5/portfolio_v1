@@ -77,11 +77,11 @@ const HomeContainer = styled.div<Props>`
 `;
 
 const Home = () => {
-    const [showOccupation, setShowOccupation] = useState();
+    const [showOccupation, setShowOccupation] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
-            setShowOccupation(true);
+         setShowOccupation(prev=>!prev);
         }, 1000);
     }, []);
     return (
@@ -89,7 +89,7 @@ const Home = () => {
             <HomeContainer showOccupation={showOccupation}>
                 <div className="home">
                     <h1 className="home__title">
-                        <TypeMe duration={1000}>Obodo David</TypeMe>
+                        <TypeMe duration={1000}>Rahul Singh Tomar</TypeMe>
                     </h1>
                     <h6 className="home__subtitle">Front End Developer</h6>
                 </div>

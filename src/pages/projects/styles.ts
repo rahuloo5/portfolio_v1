@@ -132,6 +132,7 @@ export const ProjectBodyTwo = styled.div`
             position: relative;
             cursor: pointer;
             overflow: hidden;
+            margin:10px;
 
             &__info {
                 position: relative;

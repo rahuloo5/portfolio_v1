@@ -8,14 +8,14 @@ import { Props } from './IAbout';
 
 
 const About: React.FC<Props> = () => {
-    const [displayOne, setDisplayOne] = useState();
-    const [displayTwo, setDisplayTwo] = useState();
-    const [displayThree, setDisplayThree] = useState();
-    const [displayFour, setDisplayFour] = useState();
-    const [displayFive, setDisplayFive] = useState();
-    const [displaySix, setDisplaySix] = useState();
-    const [displaySeven, setDisplaySeven] = useState();
-    const [displayEight, setDisplayEight] = useState();
+    const [displayOne, setDisplayOne] = useState(false);
+    const [displayTwo, setDisplayTwo] = useState(false);
+    const [displayThree, setDisplayThree] = useState(false);
+    const [displayFour, setDisplayFour] = useState(false);
+    const [displayFive, setDisplayFive] = useState(false);
+    const [displaySix, setDisplaySix] = useState(false);
+    const [displaySeven, setDisplaySeven] = useState(false);
+    const [displayEight, setDisplayEight] = useState(false);
 
 
     useEffect(() => {
@@ -61,7 +61,7 @@ const About: React.FC<Props> = () => {
                     <div className='about__details'>
                         {displayOne && <TypeMe duration={500}>Meticulous front end developer with passion for responsive website design.</TypeMe>}
                         <br />
-                        {displayTwo && <TypeMe duration={500}>freeCodeCamp certified. Proficient in vanilla javascript, hence can easily adapt to any of its frameworks</TypeMe>}
+                        {displayTwo && <TypeMe duration={500}> Proficient in javascript, hence can easily adapt to any of its frameworks</TypeMe>}
                         <br />
                         {displayThree && <TypeMe duration={500}>depending on the requirement of the job. Detail - oriented, with a strong knack for writing clean</TypeMe>}
                         <br />
@@ -74,11 +74,11 @@ const About: React.FC<Props> = () => {
                         </h3>
                         <p className='about__tech-section__category'>
                             <span>proficient:</span>
-                            {displaySeven && <TypeMe duration={500}>HTML, CSS, SASS, Styled-components, Vanilla javascript, React.JS, Redux, Git, Typescript, Webpack, Jest</TypeMe>}
+                            {displaySeven && <TypeMe duration={500}>HTML, CSS, SASS, Styled-components, javascript, React.JS, Redux, Git, Typescript, Webpack, Jest</TypeMe>}
                         </p>
                         <p className='about__tech-section__category'>
                             <span>familiar:</span>
-                            {displaySeven && <TypeMe duration={500}>Node.JS, JQuery, Blazor, Enzyme</TypeMe>}
+                            {displaySeven && <TypeMe duration={500}>Node.JS, React Native</TypeMe>}
                         </p>
                     </section>
                     <section className='about__buttonContainer'>

@@ -37,7 +37,7 @@ const Header = () => {
     return (
         <>
             <HeaderContainer>
-                <Link to="/">Obodo David</Link>
+                <Link to="/">Rahul Singh Tomar</Link>
             </HeaderContainer>
             <HeaderFix />
         </>
