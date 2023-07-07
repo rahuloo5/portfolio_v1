@@ -28,6 +28,17 @@ const ALL_CONTACTS = [
            link: "https://www.instagram.com/___rahul5____/",
            label: "https://www.instagram.com"
     },
+    {
+        icon: "fab fa-medium",
+           link: "https://medium.com/@rahultomar092",
+           label: "https://medium.com"
+    },
+     {
+        icon: "fab fa-youtube",
+           link: "https://www.youtube.com/channel/UC59c-3g5bY44cF9C3MW5VNQ",
+           label: "https://www.youtube.com/",
+
+    },
     
 ];
 
@@ -39,10 +50,10 @@ const Contact = () => {
                 <p className="contact__subheader">You can contact me through my mail or any of the platforms below:</p>
                 <ul className="contact__links-wrapper">
                     {ALL_CONTACTS.map((contact, i) => {
-                        const { icon, link, label } = contact;
+                        const { icon, link, label} = contact;
                         return (
                             <li key={i}>
-                                <i className={icon}></i>
+                                <i className={icon} ></i>
                                 <a href={link} target="_blank" rel="noopener noreferrer">
                                     {label}
                                 </a>

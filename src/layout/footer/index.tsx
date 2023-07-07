@@ -30,6 +30,8 @@ const Footer = () => {
             <a href="https://twitter.com/rahuloo55" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
             <a href="https://www.linkedin.com/in/rahul-tomar-941586116/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
             <a href="https://www.instagram.com/___rahul5____/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC59c-3g5bY44cF9C3MW5VNQ" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
+            <a href="https://medium.com/@rahultomar092" target="_blank" rel="noopener noreferrer"><i className="fab fa-medium"></i></a>
         </FooterContainer>
     )
 };
