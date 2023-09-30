@@ -2,6 +2,9 @@ import dominos from '../../assets/images/projects/dominos.png';
 import popeyes from '../../assets/images/projects/Popeyes-Logo.wine.png';
 import statestreet from '../../assets/images/projects/statestreet.jpeg';
 import Oliver from '../../assets/images/projects/ow-social.png';
+import Omnia from '../../assets/images/projects/omnia.png';
+import Ready from '../../assets/images/projects/readyR.png';
+
 
 
 const tags = ["Enterprise grade application", "Website", "Web Application", "Playful/Experimental"];
@@ -46,5 +49,21 @@ export const ALL_PROJECTS = [
         live_link: "https://www.statestreet.com/",
         image: statestreet,
         tags: [tags[0], tags[2]]
+    },
+    {
+        id: 4,
+        title: "Deloitte",
+        details: "Digital Audit Software",
+        live_link: "https://omnia.portal.deloitte.com/",
+        image: Omnia,
+        tags: [tags[0], tags[2]]
+    },
+    {
+        id: 4,
+        title: "BlueTriton Brands",
+        details: "Official website Ready Refresh ",
+        live_link: "https://www.readyrefresh.com/en/",
+        image: Ready,
+        tags: [tags[1], tags[2]]
     },
    ];
