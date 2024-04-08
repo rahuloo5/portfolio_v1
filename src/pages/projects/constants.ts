@@ -4,6 +4,7 @@ import statestreet from '../../assets/images/projects/statestreet.jpeg';
 import Oliver from '../../assets/images/projects/ow-social.png';
 import Omnia from '../../assets/images/projects/omnia.png';
 import Ready from '../../assets/images/projects/readyR.png';
+import Pet from '../../assets/images/projects/pet.webp';
 
 
 
@@ -66,4 +67,14 @@ export const ALL_PROJECTS = [
         image: Ready,
         tags: [tags[1], tags[2]]
     },
+    {
+        id: 5,
+        title: "Pet Smart",
+        details: "Official website Pret Smart ",
+        live_link: "https://www.petsmart.com/",
+        image: Pet,
+        tags: [tags[1], tags[2]]
+    },
+    
+
    ];
