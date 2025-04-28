@@ -74,11 +74,11 @@ const About: React.FC<Props> = () => {
                         </h3>
                         <p className='about__tech-section__category'>
                             <span>proficient:</span>
-                            {displaySeven && <TypeMe duration={500}>HTML, CSS, SASS, Styled-components, javascript, React.JS, Redux, Git, Typescript, Webpack, Jest</TypeMe>}
+                            {displaySeven && <TypeMe duration={500}>HTML, CSS, SASS, Styled-components, javascript, React.JS,Next js, Redux, Git, Typescript, Webpack, Jest, PWA</TypeMe>}
                         </p>
                         <p className='about__tech-section__category'>
                             <span>familiar:</span>
-                            {displaySeven && <TypeMe duration={500}>Node.JS, React Native</TypeMe>}
+                            {displaySeven && <TypeMe duration={500}>Node.JS, React Native, Mongo DB, Next API Routes</TypeMe>}
                         </p>
                     </section>
                     <section className='about__buttonContainer'>
