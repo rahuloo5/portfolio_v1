@@ -40,7 +40,7 @@ const ALL_CONTACTS = [
 
     },
         {
-        icon: "fab fa-code",
+        icon: "fa-solid fa-code",
         link: "https://leetcode.com/u/rahuloo55/",
         label: "https://leetcode.com/"
     },
