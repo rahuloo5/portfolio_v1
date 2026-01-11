@@ -5,7 +5,7 @@ import Oliver from '../../assets/images/projects/ow-social.png';
 import Omnia from '../../assets/images/projects/omnia.png';
 import Ready from '../../assets/images/projects/readyR.png';
 import Pet from '../../assets/images/projects/pet.webp';
-import Macy from ../../assets/images/projects/macy.png';
+import Macy from '../../assets/images/projects/macy.png';
 
 
 
