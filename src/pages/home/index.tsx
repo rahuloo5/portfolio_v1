@@ -91,7 +91,7 @@ const Home = () => {
                     <h1 className="home__title">
                         <TypeMe duration={1000}>Rahul Singh Tomar</TypeMe>
                     </h1>
-                    <h6 className="home__subtitle">Front End Developer</h6>
+                    <h6 className="home__subtitle">Full Stack Developer</h6>
                 </div>
                 <div className="links-section">
                     <Link to="/about">About</Link>

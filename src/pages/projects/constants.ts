@@ -5,6 +5,7 @@ import Oliver from '../../assets/images/projects/ow-social.png';
 import Omnia from '../../assets/images/projects/omnia.png';
 import Ready from '../../assets/images/projects/readyR.png';
 import Pet from '../../assets/images/projects/pet.webp';
+import Macy from ../../assets/images/projects/macy.png';
 
 
 
@@ -70,9 +71,17 @@ export const ALL_PROJECTS = [
     {
         id: 5,
         title: "Pet Smart",
-        details: "Official website Pret Smart ",
+        details: "Official website Pet Smart ",
         live_link: "https://www.petsmart.com/",
         image: Pet,
+        tags: [tags[1], tags[2]]
+    },
+     {
+        id: 6,
+        title: "Macys",
+        details: "Official website Macys ",
+        live_link: "http://macys.com/",
+        image: Macy,
         tags: [tags[1], tags[2]]
     },
     

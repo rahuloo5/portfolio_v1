@@ -39,6 +39,12 @@ const ALL_CONTACTS = [
            label: "https://www.youtube.com/",
 
     },
+        {
+        icon: "fa-solid fa-code",
+        link: "https://leetcode.com/u/rahuloo55/",
+        label: "https://leetcode.com/"
+    },
+
     
 ];
 
